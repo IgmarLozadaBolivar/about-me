@@ -1,5 +1,8 @@
 ---
-
+import type { lazy } from 'astro/zod';
+import '../styles/global.css'
+import { CldImage } from 'astro-cloudinary';
+import { UserRound, Heart, Github, Linkedin, Mail } from 'lucide-react';
 ---
 
 <html lang="en">
@@ -11,6 +14,81 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div class="profile flex flex-col justify-center align-center p-5 gap-2">
+
+			<div class="image flex justify-center">
+				<CldImage
+					class = "rounded-full"
+					src = "https://res.cloudinary.com/dfchm7bgq/image/upload/v1749473307/1735944739366_jcgtm8.jpg"
+					width = { 200 }
+					height = { 200 }
+					alt = "Foto de perfil"
+				/>
+			</div>
+
+			<div class="content flex flex-col justify-center items-center gap-3">
+				<h1 class = "text-4xl font-bold" >Igmar Lozada</h1>
+				<p class = "text-xl" >Estudiante de Desarrollo Fullstack</p>
+			</div>
+
+		</div>
+
+		<div class="content p-5">
+			<div class="about-me">
+				<div class="title-more-icon flex items-center gap-3 ">
+					<UserRound />
+					<h2 class = "text-3xl font-bold" >Sobre mí</h2>
+				</div>
+				<p>
+					!Hola¡ Soy Igmar Lozada, un estudiante de Desarrollo Fullstack. Me apasiona aprender nuevas tecnologías y mejorar mis habilidades en programación. Actualmente estoy enfocado en el desarrollo web y móvil, explorando diferentes lenguajes y frameworks para crear aplicaciones innovadoras.
+				</p>
+			</div>
+
+			<div class="interesting mt-5">
+				<div class="title-more-icon flex items-center gap-3">
+					<Heart />
+					<h2 class = "text-3xl font-bold" >Intereses</h2>
+				</div>
+
+				<div class="interests ml-7">
+					<ul class = "list-disc" >
+						<li>Frontend Development</li>
+						<li>Design UI/UX</li>
+						<li>Web Tecnologies</li>
+						<li>Cloud Services</li>
+						<li>Game Development</li>
+						<li>Database</li>
+						<li>Backend Development</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<footer class="contact flex flex-col items-center gap-3 mb-5">
+			<h3 class = "text-2xl font-bold" >Contacto</h3>
+
+			<div class="links">
+				<ul class = "flex gap-5">
+					<li>
+						<a href="https:github.com/igmarlozadabolivar" class = "flex items-center gap-2 hover:text-amber-500">
+							<Github />
+							GitHub
+						</a>
+					</li>
+					<li>
+						<a href="https:linkedin.com/in/igmarlozadabolivar" class = "flex items-center gap-2 hover:text-sky-500">
+							<Linkedin />
+							LinkedIn
+						</a>
+					</li>
+					<li>
+						<a href="mailto:losadabolivar@gmail.com" class = "flex items-center gap-2 hover:text-red-500">
+							<Mail />
+							Email
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
 	</body>
 </html>
