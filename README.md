@@ -1,47 +1,60 @@
-# Astro Starter Kit: Minimal
+# Kit de inicio Astro: minimalista
 
-```sh
+```
 npm create astro@latest -- --template minimal
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+> 🧑‍🚀 **Disponibilidad inmediata?** Con este framework es posible!
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Estructura del proyecto
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+Dentro del proyecto Astro, verás las siguientes carpetas y archivos:
 
 ```text
 /
 ├── public/
+│   └── favicon.svg -- Icono del sitio web
 ├── src/
 │   └── pages/
-│       └── index.astro
-└── package.json
+│       └── index.astro -- Página principal del proyecto
+│   └── styles/
+│       └── global.css -- Archivo CSS global para estilos del proyecto
+└── .env -- Variables de entorno para trabajar con Cloudinary
+└── .gitignore -- Archivos y carpetas a ignorar por Git
+└── astro.config.mjs -- Configuración de Astro integrando frameworks y autorización de dominios
+└── package.json -- Dependencias y scripts del proyecto
+└── package-lock.json -- Bloqueo de dependencias
+└── README.md -- Documentación del proyecto
+└── tsconfig.json -- Configuración de TypeScript
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro busca archivos `.astro` o `.md` en el directorio `src/pages/`. Cada página se expone como una ruta según su nombre de archivo.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+No hay nada especial en `src/components/`, pero ahí es donde nos gusta colocar cualquier componente Astro/React/Vue/Svelte/Preact.
 
-Any static assets, like images, can be placed in the `public/` directory.
+Cualquier activo estático, como imágenes, se puede colocar en el directorio 'public/'.
 
-## 🧞 Commands
+## 🧞 Comandos
 
-All commands are run from the root of the project, from a terminal:
+Todos los comandos se ejecutan desde la raíz del proyecto, desde una terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Comando                   | Acción                                                                                          |
+|:--------------------------|:------------------------------------------------------------------------------------------------|
+| `npm install`             | Instala dependencias                                                                            |
+| `npm run dev`             | Inicia el servidor de desarrollo local en `localhost:4321`                                      |
+| `npm run build`           | Construya su sitio de producción en `./dist/`                                                   |
+| `npm run preview`         | Obtenga una vista previa de su compilación localmente, antes de implementarla                   |
+| `npm run astro ...`       | Ejecute comandos CLI como `astro add`, `astro check`                                            |
+| `npm run astro -- --help` | Obtenga ayuda para utilizar la CLI de Astro                                                     |
 
-## 👀 Want to learn more?
+## Cómo usar este proyecto
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Al instalar las dependencias con `npm install`, puedes iniciar el servidor de desarrollo con 
+`npm run dev`. Esto iniciará un servidor local en `http://localhost:4321` 
+donde podrás ver el proyecto en acción localmente.
+
+
+## 👀 ¿Quieres saber más?
+
+No dudes en consultar [nuestra documentación](https://docs.astro.build) o visitar nuestro [servidor de Discord](https://astro.build/chat).
+Estos enlaces son de referencia a la documentación oficial de Astro, donde encontrarás guías, tutoriales y una comunidad activa para resolver tus dudas.
